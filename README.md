@@ -16,3 +16,14 @@ input=$SAMPLE.$gene.blastout (the blastout file against the corresponding gene d
 
 Run
 singularity exec ~/shared/apps/ROCker.sif ROCker filter -k $ROCker -x $input -o $SAMPLE.$gene.ROCker (Please install ROCker before use according to https://doi.org/10.1093/nar/gkw900)
+
+Setp1: Execute ROCker search. The minimum required parameters are:
+$> ROCker search -q input.fasta -k model.rocker -o output.blast 
+Where input.fasta is the input metagenome in FastA format, model.rocker is the ROCker model(eg. ), and output.blast is the output file to be created in tabular BLAST format. For additional supported options, execute ROCker search -h.
+
+#Note: If you have a pre-computed BLAST file, you can execute Setp2 directly.
+
+Setp2:  Execute ROCker filter.
+
+$> ROCker filter -x input.blast -k model.rocker -o output.blast 
+Where input.blast is the input search to be filtered in tabular BLAST format, model.rocker is the ROCker model, and output.blast is the output file to be created in tabular BLAST format. For additional supported options, execute ROCker filter -h.
