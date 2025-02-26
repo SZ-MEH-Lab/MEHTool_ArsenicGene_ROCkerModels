@@ -5,8 +5,8 @@ If you use the databases or ROCker models of aioA, arxA, arrA, arsC1, and arsC2 
 If you use the databases or ROCker models of arsM, arsI, and arsP genes, please cite the paper at Environ Sci Technol (https://doi.org/10.1021/acs.est.4c08620).
 
 # Citation
-Zhao, XD., Gao, ZY., Peng, JJ. et al. Various microbial taxa couple arsenic transformation to nitrogen and carbon cycling in paddy soils. Microbiome 12, 238 (2024).\
-Gao, ZY., Zhao, XD., Chen, Chuan. et al. Paddy Soil Flooding and Nonflooding Affect the Transcriptional Activity of Arsenic Methylation and Demethylation Communities. Environ Sci Technol (2025).
+1. Zhao, XD., Gao, ZY., Peng, JJ. et al. Various microbial taxa couple arsenic transformation to nitrogen and carbon cycling in paddy soils. Microbiome 12, 238 (2024).\
+2. Gao, ZY., Zhao, XD., Chen, C. et al. Paddy Soil Flooding and Nonflooding Affect the Transcriptional Activity of Arsenic Methylation and Demethylation Communities. Environ Sci Technol 59, 3548–3561 (2025).
 
 # Usage
 ## Setp1: compute BLAST file.
