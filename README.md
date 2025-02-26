@@ -8,18 +8,10 @@ Citation
 Zhao, XD., Gao, ZY., Peng, JJ. et al. Various microbial taxa couple arsenic transformation to nitrogen and carbon cycling in paddy soils. Microbiome 12, 238 (2024).
 Gao, ZY., Zhao, XD., Chen, Chuan. et al. Paddy Soil Flooding and Nonflooding Affect the Transcriptional Activity of Arsenic Methylation and Demethylation Communities. Environ Sci Technol (2025).
 
-Usage
-Please remember that all rocker commands need to run in your directory! (not any mount points, such as shared, data_name...)
-gene=aioA/arxA/arrA/arsC1/arsC2/arsM/arsI/arsP
-ROCker=$gene.150.rocker.txt (the ROCker file)
-input=$SAMPLE.$gene.blastout (the blastout file against the corresponding gene database)
-
-Run
-singularity exec ~/shared/apps/ROCker.sif ROCker filter -k $ROCker -x $input -o $SAMPLE.$gene.ROCker (Please install ROCker before use according to https://doi.org/10.1093/nar/gkw900)
-
+#Usage
 Setp1: Execute ROCker search. The minimum required parameters are:
-$> ROCker search -q input.fasta -k model.rocker -o output.blast 
-Where input.fasta is the input metagenome in FastA format, model.rocker is the ROCker model(eg. ), and output.blast is the output file to be created in tabular BLAST format. For additional supported options, execute ROCker search -h.
+$> singularity exec ROCker.sif ROCker search -q input.fasta -k model.rocker -o output.blast 
+Where input.fasta is the input metagenome in FastA format, model.rocker is the ROCker model(eg. ), and output.blast is the output file to be created in tabular BLAST format. For additional supported options, execute singularity exec ROCker.sifROCker search -h. (Please install ROCker.sif before use according to http://enve-omics.ce.gatech.edu/rocker/) 
 
 #Note: If you have a pre-computed BLAST file, you can execute Setp2 directly.
 
@@ -27,3 +19,12 @@ Setp2:  Execute ROCker filter.
 
 $> ROCker filter -x input.blast -k model.rocker -o output.blast 
 Where input.blast is the input search to be filtered in tabular BLAST format, model.rocker is the ROCker model, and output.blast is the output file to be created in tabular BLAST format. For additional supported options, execute ROCker filter -h.
+
+gene=aioA/arxA/arrA/arsC1/arsC2/arsM/arsI/arsP
+ROCker=$gene.150.rocker.txt (the ROCker file)
+input=$SAMPLE.$gene.blastout (the blastout file against the corresponding gene database)
+
+Run
+singularity exec ~/shared/apps/ROCker.sif ROCker filter -k $ROCker -x $input -o $SAMPLE.$gene.ROCker 
+
+# If you want to know more infomation about ROCker, please see https://doi.org/10.1093/nar/gkw900.
