@@ -2,7 +2,10 @@
 This repository contains As-related gene databases and ROCker models, including aioA, arxA, arrA, arsC1, arsC2, arsM, arsI, and arsP genes. If you have any other questions or needs related to the ROCker models, please don't hesitate to contact us (syzhang@des.ecnu.edu.cn). The databases and ROCker models provided here may only be used for academic exchange and are not permitted for commercial use.
 
 If you use the databases or ROCker models of aioA, arxA, arrA, arsC1, and arsC2 genes, please cite the paper at Microbiome (https://doi.org/10.1186/s40168-024-01952-4).
+
 If you use the databases or ROCker models of arsM, arsI, and arsP genes, please cite the paper at Environ Sci Technol (https://doi.org/10.1021/acs.est.4c08620).
+
+If you use the ROCker models, please also cite the paper at Nucleic Acids Res (https://doi.org/10.1093/nar/gkw900).
 
 # Citation
 1. Zhao, XD., Gao, ZY., Peng, JJ., et al. Various microbial taxa couple arsenic transformation to nitrogen and carbon cycling in paddy soils. Microbiome 12, 238 (2024).
