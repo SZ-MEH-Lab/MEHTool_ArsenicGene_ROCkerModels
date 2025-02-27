@@ -8,11 +8,11 @@ If you use the databases or ROCker models of arsM, arsI, and arsP genes, please 
 If you use the ROCker models, please also cite the paper at Nucleic Acids Res (https://doi.org/10.1093/nar/gkw900).
 
 # Citation
-1. Zhao, XD., Gao, ZY., Peng, JJ., et al. Various microbial taxa couple arsenic transformation to nitrogen and carbon cycling in paddy soils. Microbiome 12, 238 (2024).
+1. Zhao XD, Gao ZY, Peng JJ, Konstantinidis KT, Zhang SY. Various microbial taxa couple arsenic transformation to nitrogen and carbon cycling in paddy soils. Microbiome. 2024;12(1):238. 
 
-2. Gao, ZY., Zhao, XD., Chen, C., et al. Paddy Soil Flooding and Nonflooding Affect the Transcriptional Activity of Arsenic Methylation and Demethylation Communities. Environ Sci Technol 59, 3548–3561 (2025).
+2. Gao ZY, Zhao XD, Chen C, Zhao FJ, Zhang SY. Paddy Soil Flooding and Nonflooding Affect the Transcriptional Activity of Arsenic Methylation and Demethylation Communities. Environ Sci Technol. 2025;59(7):3548-3561. 
 
-3. Orellana, LH., Rodriguez-R, LM., & Konstantinidis, KT. ROCker: accurate detection and quantification of target genes in short-read metagenomic data sets by modeling sliding-window bitscores. Nucleic Acids Res 45, e14 (2017).
+3. Orellana LH, Rodriguez-R LM, Konstantinidis KT. ROCker: accurate detection and quantification of target genes in short-read metagenomic data sets by modeling sliding-window bitscores. Nucleic Acids Res. 2017;45(3):e14.
 
 # Usage
 ## Setp1: compute BLAST file.
