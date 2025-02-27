@@ -23,7 +23,7 @@ diamond blastx -q input.fasta -o output.blast -d db.dmnd -f 6 qseqid sseqid pide
 ```
 or
 ```
-blastx -query input.fasta -out output.blast -db db.fasta blastp -db db.fasta -query $input -out $output -outfmt "6 qseqid sseqid pident length mismatch gapopen qstart qend sstart send evalue bitscore qlen slen qcovs"
+blastx -query input.fasta -out output.blast -db db.fasta -outfmt "6 qseqid sseqid pident length mismatch gapopen qstart qend sstart send evalue bitscore qlen slen qcovs"
 ```
 Where input.fasta is the input metagenome in FastA format, output.blast is the output file to be created in tabular BLAST format, **db.dmnd (eg. aioA_ROCker.ref.dmnd)** and **db.fasta (eg. aioA_ROCker.ref.fa)** are the corresponding ROCker database.
 
