@@ -5,9 +5,11 @@ If you use the databases or ROCker models of aioA, arxA, arrA, arsC1, and arsC2 
 If you use the databases or ROCker models of arsM, arsI, and arsP genes, please cite the paper at Environ Sci Technol (https://doi.org/10.1021/acs.est.4c08620).
 
 # Citation
-1. Zhao, XD., Gao, ZY., Peng, JJ. et al. Various microbial taxa couple arsenic transformation to nitrogen and carbon cycling in paddy soils. Microbiome 12, 238 (2024).
+1. Zhao, XD., Gao, ZY., Peng, JJ., et al. Various microbial taxa couple arsenic transformation to nitrogen and carbon cycling in paddy soils. Microbiome 12, 238 (2024).
 
-2. Gao, ZY., Zhao, XD., Chen, C. et al. Paddy Soil Flooding and Nonflooding Affect the Transcriptional Activity of Arsenic Methylation and Demethylation Communities. Environ Sci Technol 59, 3548–3561 (2025).
+2. Gao, ZY., Zhao, XD., Chen, C., et al. Paddy Soil Flooding and Nonflooding Affect the Transcriptional Activity of Arsenic Methylation and Demethylation Communities. Environ Sci Technol 59, 3548–3561 (2025).
+
+3. Orellana, L. H., Rodriguez-R, L. M., & Konstantinidis, K. T. ROCker: accurate detection and quantification of target genes in short-read metagenomic data sets by modeling sliding-window bitscores. Nucleic acids research 45, e14 (2017).
 
 # Usage
 ## Setp1: compute BLAST file.
@@ -33,5 +35,3 @@ Where input.fasta is the input metagenome in FastA format, output.blast is the o
 singularity exec ROCker.sif ROCker filter -x input.blast -k model.rocker -o output.blast
 ```
 Where input.blast is the input search to be filtered in tabular BLAST format, **model.rocker is the ROCker model (eg. aioA.150.rocker.txt)**, and output.blast is the output file to be created in tabular BLAST format (you can use this file to do further analysis). For additional supported options, execute singularity exec ROCker.sif ROCker filter -h.
-
-If you want to know more infomation about ROCker, please read the paper at Nucleic Acids Res (https://doi.org/10.1093/nar/gkw900).
